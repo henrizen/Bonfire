@@ -47,6 +47,7 @@ $route['register']				= 'users/register';
 $route['logout']				= 'users/logout';
 $route['forgot_password']		= 'users/forgot_password';
 $route['reset_password/(:any)/(:any)']	= "users/reset_password/$1/$2";
+$route['activate/(:any)/(:any)']					= 'users/activate/$1/$2';
 
 // Contexts
 $route[SITE_AREA .'/([a-z_]+)/(:any)/(:any)/(:any)/(:any)/(:any)']		= "$2/$1/$3/$4/$5/$6";
@@ -54,8 +55,16 @@ $route[SITE_AREA .'/([a-z_]+)/(:any)/(:any)/(:any)/(:any)']		= "$2/$1/$3/$4/$5";
 $route[SITE_AREA .'/([a-z_]+)/(:any)/(:any)/(:any)']		= "$2/$1/$3/$4";
 $route[SITE_AREA .'/([a-z_]+)/(:any)/(:any)'] 		= "$2/$1/$3";
 $route[SITE_AREA .'/([a-z_]+)/(:any)']				= "$2/$1/index";
+$route[SITE_AREA .'/content']				= "admin/content/index";
+$route[SITE_AREA .'/reports']				= "admin/reports/index";
+$route[SITE_AREA .'/developer']				= "admin/developer/index";
+$route[SITE_AREA .'/settings']				= "settings/index";
 
 $route[SITE_AREA]	= SITE_AREA .'/home';
+
+// Activation
+$route['activate']		        = 'users/activate';
+$route['resend_activation']		= 'users/resend_activation';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
