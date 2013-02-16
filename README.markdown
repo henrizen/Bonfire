@@ -1,3 +1,4 @@
+to sa moje zmiany tesotwe
 # Faster Development of CodeIgniter 2.0 Apps
 
 <div style="float: right; margin: 0 20px 20px 0">
